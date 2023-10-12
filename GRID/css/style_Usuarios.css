@@ -1,0 +1,194 @@
+@import "../css/variablesCSS.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fondo animado */
+ body{
+    height: 100vh;
+    color: var(--bs-black);
+    background-image: url("../imagen/DreamShaper_v7_Craft_a_striking_image_of_a_futuristic_web_page_0.jpg");
+    background-size: cover;
+    background-position: center;
+    animation: animate 35s infinite;
+} 
+
+.logo{
+    font-family: 'Abril Fatface', serif;
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--bs-black);
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+a:hover{
+    color:#28A745 ;
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold; 
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+    font-family: 'Lora', serif;
+}
+
+
+.navbar .toggle_btn{
+    color: wheat;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+} 
+
+.action_btn{
+    background-color: #28A745;
+    color: antiquewhite;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    font-family: 'Lora', serif;
+}
+ 
+.action_btn:hover{
+    scale: 1.05;
+    color: aliceblue;
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+
+/* Dropdown Menu */
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.5);
+    /* backdrop-filter: blur(15px); */
+    backdrop-filter: blur(5px);
+    /* border-radius: 10px;*/
+    border-radius: 20px;
+    overflow: hidden;
+    transition: height 0.25 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* aqui se calcula el tamaño de la ventana abierta */
+.dropdown_menu.open{
+    height: 180px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* hero */
+section#hero{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+}
+
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+/* responsive Desing */
+@media (max-width: 992px) {
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
+
+/* slide animation */
+@keyframes animate{
+    20%{
+        background-image: url('../imagen/DreamShaper_v7_Design_a_captivating_and_unique_background_imag_4.jpg');
+        background-size: cover;
+    }
+    40%{
+        background-image: url('../imagen/DreamShaper_v7_Design_a_captivating_and_unique_background_imag_3.jpg');
+        background-size: cover;
+    }
+    60%{
+        background-image: url('../imagen/DreamShaper_v7_Design_a_captivating_and_unique_background_imag_2.jpg');
+        background-size: cover;
+    }
+    80%{
+        background-image: url('../imagen/DreamShaper_v7_Design_a_captivating_and_unique_background_imag_1.jpg');
+        background-size: cover;
+    }
+    100%{
+        background-image: url('../imagen/DreamShaper_v7_Design_a_captivating_and_unique_background_imag_0.jpg');
+        background-size: cover;
+    }
+    110%{
+        background-image: url('../imagen/DreamShaper_v7_Craft_a_striking_image_of_a_futuristic_web_page_0.jpg');
+        background-size: cover;
+    }
+}

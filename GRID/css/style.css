@@ -1,0 +1,58 @@
+@import "../css/variablesCSS.css";
+
+body{
+  /*background-color: var( --bs-gray-400);*/
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  /* background: var(--bs-body-bg); */
+  background: #0B2545;
+   background: linear-gradient(to right, #134074, #0B2545); 
+
+ /* background-image: url(../imagen/DreamShaper_v7_Craft_a_striking_image_of_a_futuristic_web_page_0.jpg);
+  /* background-image: url(../imagen/DreamShaper_v7_Design_a_captivating_and_unique_background_imag_0.jpg); */
+  /* kbackground-image: url(../imagen/DreamShaper_v7_Design_a_captivating_and_unique_background_imag_4.jpg); */
+  
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#log{
+  font-family: 'Abril Fatface', cursive;
+}
+
+.head1{
+  color: var(--bs-white);
+  text-align: center;
+  margin: 20px 0 20px 0;
+  font-family: 'Abril Fatface', cursive;
+}
+
+main{
+  padding: 2em 0 0 0;
+  /* opacity: 0.7; */
+  border-radius: 25px;
+}
+
+/* main:hover{
+  opacity: 1;
+} */
+
+
+.footer{
+  color: var( --bs-white);
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+#adm{
+  margin: 0 0 10em 0;
+}
+
+#nameAdmin{
+  margin: 0 0 0 0.5em;
+}

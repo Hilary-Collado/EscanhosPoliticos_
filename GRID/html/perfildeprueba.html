@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="../css/style.css"> -->
+  <link rel="stylesheet" href="../css/style_Usuarios.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"> -->
+  <!-- <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- fuentes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <title>Document</title>
+</head>
+
+<body>
+   
+
+    <!-- <div class="card text-bg-dark">
+        <img src="../imagen/DreamShaper_v7_Design_a_captivating_and_unique_background_imag_4.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Escaños Politicos</h5>
+          <div class="menu">
+            <ul class="menu__items">
+                <li class="item"><a href="">Home</a></li>
+                <li class="item"><a href="">Mantenimientos</a><lil>
+                <li class="item"><a href=""></a></li>
+                <li class="item"><a href=""></a></li>
+            </ul>
+          </div>
+          <i class="fa-solid fa-bars-filter"></i>
+          <i class="fa-solid fa-bars"></i>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small>Last updated 3 mins ago</small></p>
+        </div>
+      </div> -->
+
+      <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Escaños Políticos</a></div>
+            <ul class="links">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Sobre Nosotros</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+            <a href="#" class="action_btn">Acceder</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Sobre Nosotros</a></li>
+          <li><a href="">Contacto</a></li>
+          <li><a href="" class="action_btn"> get started</a></li>
+        </div>
+      </header>
+
+
+       
+    <!-- slider -->
+      <div class="slider_container">
+        <div class="slider position"></div>
+      </div>
+
+
+
+      <main>
+        <section id="hero">
+          <h1 class="titulo">Welcome</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br /> Error, dolorum dignissimos. <br />Harum quas impedit voluptatibus, corrupti eos earum illum asperiores officiis dignissimos porro blanditiis numquam necessitatibus alias ipsum vero facilis.</p>
+        </section>
+      </main>
+
+
+
+
+
+
+      <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropdownMenu = document.querySelector('.dropdown_menu')
+        
+        toggleBtn.onclick = function(){
+          dropdownMenu.classList.toggle('open')
+          const isOpen = dropdownMenu.classList.contains('open')
+
+          toggleBtnIcon.classList = isOpen
+          ? 'fa-solid fa-xmark'
+          : 'fa-solid fa-bars'
+        }
+      </script>
+</body>
+
+</html>
